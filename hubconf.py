@@ -158,7 +158,7 @@ def perform_gridsearch_cv_multimetric(model1=None, param_grid=None, cv=5, X=None
   # for i in metrics:
   #   top1_scores[i] = cv_results[i]
 
-  top_scores = cv_results['test_score']
+  top1_scores = cv_results['test_score']
   
   
   return top1_scores
