@@ -13,6 +13,9 @@ from sklearn import metrics
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import cross_validate
 
+import warnings
+warnings.filterwarnings("ignore")
+
 # You can import whatever standard packages are required
 
 # full sklearn, full pytorch, pandas, matplotlib, numpy are all available
