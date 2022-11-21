@@ -118,7 +118,7 @@ def get_paramgrid_lr():
   # you need to return parameter grid dictionary for use in grid search cv
   # penalty: l1 or l2
   # lr_param_grid = None
-  lr_param_grid = {'C':[1, 10, 100,1000], 'penalty': ('l1', 'l2')}
+  lr_param_grid = {'penalty': ('l1', 'l2')}
   # refer to sklearn documentation on grid search and logistic regression
   # write your code here...
   return lr_param_grid
