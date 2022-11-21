@@ -129,7 +129,7 @@ def get_paramgrid_rf():
   # criterion: gini, entropy
   # maximum depth: 1, 10, None  
   # rf_param_grid = None
-  rf_param_grid = {'C':[1, 10, 100, 1000], 'n_estimators': [1, 10, 100], 'criterion': ('gini', 'entropy'), 'maximum depth': [1, 10, None]}
+  rf_param_grid = {'n_estimators': [1, 10, 100], 'criterion': ('gini', 'entropy'), 'maximum depth': [1, 10, None]}
   # refer to sklearn documentation on grid search and random forest classifier
   # write your code here...
   return rf_param_grid
