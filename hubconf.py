@@ -6,6 +6,13 @@ from sklearn.datasets import make_blobs, make_circles, load_digits
 from sklearn.cluster import KMeans, AgglomerativeClustering, DBSCAN, Birch
 from sklearn.metrics import homogeneity_score, completeness_score, adjusted_rand_score, normalized_mutual_info_score, v_measure_score
 
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_curve
+from sklearn import metrics
+from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import cross_validate
+
 # You can import whatever standard packages are required
 
 # full sklearn, full pytorch, pandas, matplotlib, numpy are all available
@@ -72,12 +79,6 @@ def compare_clusterings(ypred_1=None,ypred_2=None):
 
 
 ###### PART 2 ######
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_curve
-from sklearn import metrics
-from sklearn.model_selection import GridSearchCV
-from sklearn.model_selection import cross_validate
 
 def build_lr_model(X=None, y=None):
   pass
