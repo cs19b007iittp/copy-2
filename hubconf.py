@@ -154,7 +154,7 @@ def perform_gridsearch_cv_multimetric(model1=None, param_grid=None, cv=5, X=None
   # refer to cv_results_ dictonary
   # return top 1 score for each of the metrics given, in the order given in metrics=... list
   cv_results = cross_validate(model1, X, y, cv=cv)
-  top1_scores = []
+#   top1_scores = []
   # for i in metrics:
   #   top1_scores[i] = cv_results[i]
 
